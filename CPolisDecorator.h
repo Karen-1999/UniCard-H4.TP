@@ -19,11 +19,11 @@ using std::vector;
 class CPolisDecorator : public IUniCard
 {
 public:
-    CPolisDecorator(shared_ptr<CUniCard> _unicard, string _age, string _lastVisit, vector<string>& _ilnesses) :
+
+    CPolisDecorator(shared_ptr<CUniCard> _unicard, string _bornDate, string _lastVisit) :
             unicard(_unicard),
-            age(_age),
-            lastVisit(_lastVisit),
-            ilnesses(_ilnesses)
+            bornDate(_bornDate),
+            lastVisit(_lastVisit)
     {};
     virtual ~CPolisDecorator()= default;
 
@@ -38,11 +38,14 @@ public:
     }
 
     string getAge() const
-    { return age; }
+    { return bornDate; }
+
     string getLastVisit() const
     { return lastVisit; }
+
     vector<string> getIlnesses() const
     { return ilnesses; }
+
     void printIlnesses() const
     {
         for(int i=0; i<ilnesses.size(); ++i)
@@ -51,7 +54,7 @@ public:
 
 private:
     shared_ptr<CUniCard> unicard;
-    string age;
+    string bornDate;
     string lastVisit;
     vector<string> ilnesses;
 };

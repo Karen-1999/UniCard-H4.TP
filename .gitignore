@@ -2,3 +2,6 @@ cmake-build-debug/
 .idea/
 HomeTask4
 CMakeFiles/
+html/
+latex/
+cmake_install.cmake
