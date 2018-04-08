@@ -5,6 +5,10 @@
 #ifndef HOMETASK4_IUNICARD_H
 #define HOMETASK4_IUNICARD_H
 
+/**
+ * \brief интерфейс UniCard
+ */
+
 class IUniCard {
 public:
     virtual ~IUniCard() = default;

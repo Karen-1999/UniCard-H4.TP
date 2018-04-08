@@ -9,12 +9,18 @@
 #include "CUniCard.h"
 #include "CPolisDecorator.h"
 
+/**
+ * \brief Интерфейс Device, считающего страховой полис
+ */
 class CPolisReader : public IUniCardReader
 {
 public:
     CPolisReader(CPolisDecorator* _unicard) : unicard(_unicard)
     {};
     virtual ~CPolisReader() = default;
+    /**
+    * \brief Вывод информации про данную карту
+    */
     virtual void reader()
     {
         unicard->info();

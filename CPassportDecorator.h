@@ -15,6 +15,10 @@ using std::shared_ptr;
 using std::cout;
 using std::endl;
 
+/**
+* \brief Декоратор пасспорта
+*/
+
 class CPassportDecorator : public IUniCard
 {
 public:
@@ -25,6 +29,11 @@ public:
             passportAvailableToDate(_passportAvailableToDate)
     {}
     virtual ~CPassportDecorator() = default;
+
+    /**
+    * \brief Паспортные данные гражданина(ФИО, Дата и место рождения, не истек ли срок паспорта):
+    * \return Вывод информации о переводе
+    */
     virtual void info()
     {
         cout<<"Information about person:"<<endl;
@@ -32,17 +41,40 @@ public:
         cout<<"Was born in "<<getBornDate()<<" in "<<getBornPlace()<<endl;
         cout<<"Passport is available to "<<getPassportAvailableToDate()<<endl;
     }
+
+    /**
+    * \brief Дата рождения
+    * \return Вывод даты рождения
+    */
     string getBornDate() const
     { return bornDate; }
+
+    /**
+    * \brief Место рождения
+    * \return Вывод места рождения
+    */
     string getBornPlace() const
     { return bornPlace; }
+
+    /**
+    * \brief Проверка истечения срока пасспорта
+    * \return Результаты проверки
+    */
     string getPassportAvailableToDate() const
     { return passportAvailableToDate; }
 
+    /**
+    * \brief Проверить на фальшивость
+    * \return Вывод информации
+    */
     bool checkInBase{
           //проверка в базе наличия гражданина
     };
 
+    /**
+    * \brief Проверить срок визы
+    * \return Вывод информации
+    */
     bool checkForVisa{
             //проверка срока действия Шенген визы,к примеру.
     };

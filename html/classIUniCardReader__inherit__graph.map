@@ -1,0 +1,5 @@
+<map id="IUniCardReader" name="IUniCardReader">
+<area shape="rect" id="node2" href="$classCPassportReader.html" title="Интерфейс Device, считающего паспорт " alt="" coords="5,80,132,107"/>
+<area shape="rect" id="node3" href="$classCPolisReader.html" title="Интерфейс Device, считающего страховой полис " alt="" coords="156,80,259,107"/>
+<area shape="rect" id="node4" href="$classCSberbankReader.html" title="Интерфейс Device, считающего карточку Сбербанка " alt="" coords="283,80,412,107"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="IUniCard" name="IUniCard">
+<area shape="rect" id="node2" href="$classCPassportDecorator.html" title="Декоратор пасспорта " alt="" coords="5,80,147,107"/>
+<area shape="rect" id="node3" href="$classCPolisDecorator.html" title="Декоратор страхового полиса " alt="" coords="171,80,290,107"/>
+<area shape="rect" id="node4" href="$classCSberbankDecorator.html" title="Декоратор сбербанковской карты " alt="" coords="315,80,459,107"/>
+<area shape="rect" id="node5" href="$classCUniCard.html" title="Интерфейс UniCard. " alt="" coords="483,80,563,107"/>
+</map>

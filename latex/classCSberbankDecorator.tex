@@ -1,0 +1,134 @@
+\hypertarget{classCSberbankDecorator}{}\section{C\+Sberbank\+Decorator Class Reference}
+\label{classCSberbankDecorator}\index{C\+Sberbank\+Decorator@{C\+Sberbank\+Decorator}}
+
+
+Декоратор сбербанковской карты  
+
+
+
+
+{\ttfamily \#include $<$C\+Sberbank\+Decorator.\+h$>$}
+
+
+
+Inheritance diagram for C\+Sberbank\+Decorator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{classCSberbankDecorator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C\+Sberbank\+Decorator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{classCSberbankDecorator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCSberbankDecorator_a0cab61c44399947bbe5355a2fb70428f}\label{classCSberbankDecorator_a0cab61c44399947bbe5355a2fb70428f}} 
+{\bfseries C\+Sberbank\+Decorator} (\hyperlink{classCUniCard}{C\+Uni\+Card} $\ast$\+\_\+unicard, int \+\_\+money, bool \+\_\+available)
+\item 
+\mbox{\Hypertarget{classCSberbankDecorator_a253d67f88793c4e6ce5698e616cdeb07}\label{classCSberbankDecorator_a253d67f88793c4e6ce5698e616cdeb07}} 
+int {\bfseries get\+Money} () const
+\item 
+\mbox{\Hypertarget{classCSberbankDecorator_ab69d38128eb4ba05d2d5b21769b80204}\label{classCSberbankDecorator_ab69d38128eb4ba05d2d5b21769b80204}} 
+bool {\bfseries check\+Available} () const
+\item 
+\mbox{\Hypertarget{classCSberbankDecorator_a51576c6acd9000635528d0d414fcd053}\label{classCSberbankDecorator_a51576c6acd9000635528d0d414fcd053}} 
+void {\bfseries set\+Money} (int value)
+\item 
+virtual void \hyperlink{classCSberbankDecorator_a2c19e1fe10123e813de29572512d69b8}{info} ()
+\begin{DoxyCompactList}\small\item\em Платежная информация по карте \end{DoxyCompactList}\item 
+void \hyperlink{classCSberbankDecorator_a6c8175379ec2e07e6b4fe6fe2da58425}{send\+Money} (int value)
+\begin{DoxyCompactList}\small\item\em Перевод денежных средств другому клиенту \end{DoxyCompactList}\item 
+void \hyperlink{classCSberbankDecorator_a4182d5c8d8d0214ad53c26ebe26cce09}{get\+Money\+From\+Other} (int value)
+\begin{DoxyCompactList}\small\item\em Получение денежных средств от другого клиента \end{DoxyCompactList}\item 
+void \hyperlink{classCSberbankDecorator_a60aedba1baefb930f51176b38d3682c5}{check\+Hipotecs} ()
+\begin{DoxyCompactList}\small\item\em Проверка задолженностей и ипотек \end{DoxyCompactList}\item 
+void \hyperlink{classCSberbankDecorator_a0bee1976bcb32c4e927166aa3ab857d0}{check\+Deposit} ()
+\begin{DoxyCompactList}\small\item\em Проверка депозитных счетов \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Декоратор сбербанковской карты 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classCSberbankDecorator_a0bee1976bcb32c4e927166aa3ab857d0}\label{classCSberbankDecorator_a0bee1976bcb32c4e927166aa3ab857d0}} 
+\index{C\+Sberbank\+Decorator@{C\+Sberbank\+Decorator}!check\+Deposit@{check\+Deposit}}
+\index{check\+Deposit@{check\+Deposit}!C\+Sberbank\+Decorator@{C\+Sberbank\+Decorator}}
+\subsubsection{\texorpdfstring{check\+Deposit()}{checkDeposit()}}
+{\footnotesize\ttfamily void C\+Sberbank\+Decorator\+::check\+Deposit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Проверка депозитных счетов 
+
+\begin{DoxyReturn}{Returns}
+Вывод информации о вкладах 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCSberbankDecorator_a60aedba1baefb930f51176b38d3682c5}\label{classCSberbankDecorator_a60aedba1baefb930f51176b38d3682c5}} 
+\index{C\+Sberbank\+Decorator@{C\+Sberbank\+Decorator}!check\+Hipotecs@{check\+Hipotecs}}
+\index{check\+Hipotecs@{check\+Hipotecs}!C\+Sberbank\+Decorator@{C\+Sberbank\+Decorator}}
+\subsubsection{\texorpdfstring{check\+Hipotecs()}{checkHipotecs()}}
+{\footnotesize\ttfamily void C\+Sberbank\+Decorator\+::check\+Hipotecs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Проверка задолженностей и ипотек 
+
+\begin{DoxyReturn}{Returns}
+Вывод информации о долгах и ипотеках 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCSberbankDecorator_a4182d5c8d8d0214ad53c26ebe26cce09}\label{classCSberbankDecorator_a4182d5c8d8d0214ad53c26ebe26cce09}} 
+\index{C\+Sberbank\+Decorator@{C\+Sberbank\+Decorator}!get\+Money\+From\+Other@{get\+Money\+From\+Other}}
+\index{get\+Money\+From\+Other@{get\+Money\+From\+Other}!C\+Sberbank\+Decorator@{C\+Sberbank\+Decorator}}
+\subsubsection{\texorpdfstring{get\+Money\+From\+Other()}{getMoneyFromOther()}}
+{\footnotesize\ttfamily void C\+Sberbank\+Decorator\+::get\+Money\+From\+Other (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Получение денежных средств от другого клиента 
+
+\begin{DoxyReturn}{Returns}
+Вывод информации о получении 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCSberbankDecorator_a2c19e1fe10123e813de29572512d69b8}\label{classCSberbankDecorator_a2c19e1fe10123e813de29572512d69b8}} 
+\index{C\+Sberbank\+Decorator@{C\+Sberbank\+Decorator}!info@{info}}
+\index{info@{info}!C\+Sberbank\+Decorator@{C\+Sberbank\+Decorator}}
+\subsubsection{\texorpdfstring{info()}{info()}}
+{\footnotesize\ttfamily virtual void C\+Sberbank\+Decorator\+::info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Платежная информация по карте 
+
+\begin{DoxyReturn}{Returns}
+Вывод информации о владельце карты 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classIUniCard}{I\+Uni\+Card}.
+
+\mbox{\Hypertarget{classCSberbankDecorator_a6c8175379ec2e07e6b4fe6fe2da58425}\label{classCSberbankDecorator_a6c8175379ec2e07e6b4fe6fe2da58425}} 
+\index{C\+Sberbank\+Decorator@{C\+Sberbank\+Decorator}!send\+Money@{send\+Money}}
+\index{send\+Money@{send\+Money}!C\+Sberbank\+Decorator@{C\+Sberbank\+Decorator}}
+\subsubsection{\texorpdfstring{send\+Money()}{sendMoney()}}
+{\footnotesize\ttfamily void C\+Sberbank\+Decorator\+::send\+Money (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Перевод денежных средств другому клиенту 
+
+\begin{DoxyReturn}{Returns}
+Вывод информации о переводе 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+Sberbank\+Decorator.\+h\end{DoxyCompactItemize}

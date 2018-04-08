@@ -17,6 +17,11 @@ using std::cout;
 using std::endl;
 using std::string;
 
+
+/**
+* \brief Декоратор сбербанковской карты
+*/
+
 class CSberbankDecorator : public IUniCard
 {
 public:
@@ -35,10 +40,20 @@ public:
     void setMoney(int value)
     { money = value;}
 
+
+    /**
+    * \brief Платежная информация по карте
+    * \return Вывод информации о владельце карты
+    */
     virtual void info()
     {
         unicard->info();
     }
+
+    /**
+    * \brief Перевод денежных средств другому клиенту
+    * \return Вывод информации о переводе
+    */
     void sendMoney(int value)
     {
         cout<<"checking for availablity"<<endl;
@@ -59,6 +74,10 @@ public:
             cout<<"operation failed"<<endl;
     }
 
+    /**
+    * \brief Получение денежных средств от другого клиента
+    * \return Вывод информации о получении
+    */
     void getMoneyFromOther(int value)
     {
         cout<<"checking for availablity"<<endl;
@@ -73,10 +92,19 @@ public:
             setMoney(getMoney()+value);
     }
 
+    /**
+    * \brief Проверка задолженностей и ипотек
+    * \return Вывод информации о долгах и ипотеках
+    */
     void checkHipotecs() {
             //проверить и вывести список ипотек
     };
 
+
+    /**
+    * \brief Проверка депозитных счетов
+    * \return Вывод информации о вкладах
+    */
     void checkDeposit() {
         //проверить наличие депозитов и вложений
     }

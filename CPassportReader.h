@@ -7,13 +7,19 @@
 
 #include "IUniCardReader.h"
 #include "CPassportDecorator.h"
-
+/**
+ * \brief Интерфейс Device, считающего паспорт
+ */
 class CPassportReader : public IUniCardReader
 {
 public:
     CPassportReader(CPassportDecorator* _unicard) : unicard(_unicard)
     {};
     virtual ~CPassportReader() = default;
+
+    /**
+     * \brief Общая информация о карте
+    */
     virtual void reader()
     {
         unicard->info();

@@ -1,0 +1,161 @@
+\hypertarget{classCPolisDecorator}{}\section{C\+Polis\+Decorator Class Reference}
+\label{classCPolisDecorator}\index{C\+Polis\+Decorator@{C\+Polis\+Decorator}}
+
+
+Декоратор страхового полиса  
+
+
+
+
+{\ttfamily \#include $<$C\+Polis\+Decorator.\+h$>$}
+
+
+
+Inheritance diagram for C\+Polis\+Decorator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{classCPolisDecorator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C\+Polis\+Decorator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{classCPolisDecorator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCPolisDecorator_a7ae702036d0fc6d91178f25a4f00d64c}\label{classCPolisDecorator_a7ae702036d0fc6d91178f25a4f00d64c}} 
+{\bfseries C\+Polis\+Decorator} (shared\+\_\+ptr$<$ \hyperlink{classCUniCard}{C\+Uni\+Card} $>$ \+\_\+unicard, string \+\_\+born\+Date, string \+\_\+last\+Visit)
+\item 
+virtual void \hyperlink{classCPolisDecorator_a3e5c7651e0db69bfcc4a9b67e961b9a8}{info} ()
+\begin{DoxyCompactList}\small\item\em Основная информация по полису\+: \end{DoxyCompactList}\item 
+string \hyperlink{classCPolisDecorator_a9e380f2e7020eb4444a0bb3747380918}{get\+Age} () const
+\begin{DoxyCompactList}\small\item\em Дата рождения \end{DoxyCompactList}\item 
+string \hyperlink{classCPolisDecorator_afc603d0d42eb72689b103bd47ec225ce}{get\+Last\+Visit} () const
+\begin{DoxyCompactList}\small\item\em Дата последнего визита к врачу \end{DoxyCompactList}\item 
+vector$<$ string $>$ \hyperlink{classCPolisDecorator_ac43dd7017dc2a1dd70d2cf0431cc3e7f}{get\+Ilnesses} () const
+\begin{DoxyCompactList}\small\item\em Список болезней \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCPolisDecorator_a473a2c0b0bba20c7fc8575a7aae5a5ae}\label{classCPolisDecorator_a473a2c0b0bba20c7fc8575a7aae5a5ae}} 
+void {\bfseries print\+Ilnesses} () const
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classCPolisDecorator_adc7849b17854791c53ae1b18a7b445c6}{check\+In\+Base}
+\begin{DoxyCompactList}\small\item\em Проверить прикреплен ли человек \end{DoxyCompactList}\item 
+bool \hyperlink{classCPolisDecorator_a06749afa01826039c719984b3728860a}{check\+For\+Benefits}
+\begin{DoxyCompactList}\small\item\em проверить наличие льготных прав в базе. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Декоратор страхового полиса 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classCPolisDecorator_a9e380f2e7020eb4444a0bb3747380918}\label{classCPolisDecorator_a9e380f2e7020eb4444a0bb3747380918}} 
+\index{C\+Polis\+Decorator@{C\+Polis\+Decorator}!get\+Age@{get\+Age}}
+\index{get\+Age@{get\+Age}!C\+Polis\+Decorator@{C\+Polis\+Decorator}}
+\subsubsection{\texorpdfstring{get\+Age()}{getAge()}}
+{\footnotesize\ttfamily string C\+Polis\+Decorator\+::get\+Age (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Дата рождения 
+
+\begin{DoxyReturn}{Returns}
+Вывод даты рождения 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCPolisDecorator_ac43dd7017dc2a1dd70d2cf0431cc3e7f}\label{classCPolisDecorator_ac43dd7017dc2a1dd70d2cf0431cc3e7f}} 
+\index{C\+Polis\+Decorator@{C\+Polis\+Decorator}!get\+Ilnesses@{get\+Ilnesses}}
+\index{get\+Ilnesses@{get\+Ilnesses}!C\+Polis\+Decorator@{C\+Polis\+Decorator}}
+\subsubsection{\texorpdfstring{get\+Ilnesses()}{getIlnesses()}}
+{\footnotesize\ttfamily vector$<$string$>$ C\+Polis\+Decorator\+::get\+Ilnesses (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Список болезней 
+
+\begin{DoxyReturn}{Returns}
+Вывод списка болезней 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCPolisDecorator_afc603d0d42eb72689b103bd47ec225ce}\label{classCPolisDecorator_afc603d0d42eb72689b103bd47ec225ce}} 
+\index{C\+Polis\+Decorator@{C\+Polis\+Decorator}!get\+Last\+Visit@{get\+Last\+Visit}}
+\index{get\+Last\+Visit@{get\+Last\+Visit}!C\+Polis\+Decorator@{C\+Polis\+Decorator}}
+\subsubsection{\texorpdfstring{get\+Last\+Visit()}{getLastVisit()}}
+{\footnotesize\ttfamily string C\+Polis\+Decorator\+::get\+Last\+Visit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Дата последнего визита к врачу 
+
+\begin{DoxyReturn}{Returns}
+Вывод информации о последнем визите 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCPolisDecorator_a3e5c7651e0db69bfcc4a9b67e961b9a8}\label{classCPolisDecorator_a3e5c7651e0db69bfcc4a9b67e961b9a8}} 
+\index{C\+Polis\+Decorator@{C\+Polis\+Decorator}!info@{info}}
+\index{info@{info}!C\+Polis\+Decorator@{C\+Polis\+Decorator}}
+\subsubsection{\texorpdfstring{info()}{info()}}
+{\footnotesize\ttfamily virtual void C\+Polis\+Decorator\+::info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Основная информация по полису\+: 
+
+Возраст, дата последнего визита, список болезней \begin{DoxyReturn}{Returns}
+Вывод информации по полису 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classIUniCard}{I\+Uni\+Card}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classCPolisDecorator_a06749afa01826039c719984b3728860a}\label{classCPolisDecorator_a06749afa01826039c719984b3728860a}} 
+\index{C\+Polis\+Decorator@{C\+Polis\+Decorator}!check\+For\+Benefits@{check\+For\+Benefits}}
+\index{check\+For\+Benefits@{check\+For\+Benefits}!C\+Polis\+Decorator@{C\+Polis\+Decorator}}
+\subsubsection{\texorpdfstring{check\+For\+Benefits}{checkForBenefits}}
+{\footnotesize\ttfamily bool C\+Polis\+Decorator\+::check\+For\+Benefits}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{
+            
+    \}
+\end{DoxyCode}
+
+
+проверить наличие льготных прав в базе. 
+
+\begin{DoxyReturn}{Returns}
+Вывод информации о льготах 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCPolisDecorator_adc7849b17854791c53ae1b18a7b445c6}\label{classCPolisDecorator_adc7849b17854791c53ae1b18a7b445c6}} 
+\index{C\+Polis\+Decorator@{C\+Polis\+Decorator}!check\+In\+Base@{check\+In\+Base}}
+\index{check\+In\+Base@{check\+In\+Base}!C\+Polis\+Decorator@{C\+Polis\+Decorator}}
+\subsubsection{\texorpdfstring{check\+In\+Base}{checkInBase}}
+{\footnotesize\ttfamily bool C\+Polis\+Decorator\+::check\+In\+Base}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{
+            
+    \}
+\end{DoxyCode}
+
+
+Проверить прикреплен ли человек 
+
+\begin{DoxyReturn}{Returns}
+Вывод информации 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+Polis\+Decorator.\+h\end{DoxyCompactItemize}

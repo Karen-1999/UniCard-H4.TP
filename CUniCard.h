@@ -9,6 +9,11 @@
 #include <string>
 #include "IUniCard.h"
 
+
+/**
+* \brief Интерфейс UniCard
+*/
+
 class CUniCard : public IUniCard {
 public:
     CUniCard(std::string _clientID, std::string _clientName) :
@@ -19,6 +24,11 @@ public:
     std::string getClientName() const {
         return clientName;
     }
+
+    /**
+    * \brief Информация о владельце карты
+    * \return Вывод информации о владельце
+    */
     virtual void info()
     {
         std::cout<<"Your clientID is "<<clientID<<"client Name is "<<clientName<<std::endl;

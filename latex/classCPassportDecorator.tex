@@ -1,0 +1,158 @@
+\hypertarget{classCPassportDecorator}{}\section{C\+Passport\+Decorator Class Reference}
+\label{classCPassportDecorator}\index{C\+Passport\+Decorator@{C\+Passport\+Decorator}}
+
+
+Декоратор пасспорта  
+
+
+
+
+{\ttfamily \#include $<$C\+Passport\+Decorator.\+h$>$}
+
+
+
+Inheritance diagram for C\+Passport\+Decorator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{classCPassportDecorator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C\+Passport\+Decorator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{classCPassportDecorator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCPassportDecorator_aa43bccb88ac663e1a36d85c567ab5076}\label{classCPassportDecorator_aa43bccb88ac663e1a36d85c567ab5076}} 
+{\bfseries C\+Passport\+Decorator} (\hyperlink{classCUniCard}{C\+Uni\+Card} $\ast$\+\_\+unicard, string \+\_\+born\+Date, string \+\_\+born\+Place, string \+\_\+passport\+Available\+To\+Date)
+\item 
+virtual void \hyperlink{classCPassportDecorator_aec16f6c3f9feaa6da4d8cef5ea27c7b8}{info} ()
+\begin{DoxyCompactList}\small\item\em Паспортные данные гражданина(ФИО, Дата и место рождения, не истек ли срок паспорта)\+: \end{DoxyCompactList}\item 
+string \hyperlink{classCPassportDecorator_a116ab0fa075e02edb74339e2e1cd3389}{get\+Born\+Date} () const
+\begin{DoxyCompactList}\small\item\em Дата рождения \end{DoxyCompactList}\item 
+string \hyperlink{classCPassportDecorator_a941e597cc2514d8397030eab58682aa6}{get\+Born\+Place} () const
+\begin{DoxyCompactList}\small\item\em Место рождения \end{DoxyCompactList}\item 
+string \hyperlink{classCPassportDecorator_a96c55b65b042d4294d6cba471a936574}{get\+Passport\+Available\+To\+Date} () const
+\begin{DoxyCompactList}\small\item\em Проверка истечения срока пасспорта \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classCPassportDecorator_a972d9fe88105ba06ec5bab01e230b1a8}{check\+In\+Base}
+\begin{DoxyCompactList}\small\item\em Проверить на фальшивость \end{DoxyCompactList}\item 
+bool \hyperlink{classCPassportDecorator_a2497ce4827a91e25a28756a56a8ba245}{check\+For\+Visa}
+\begin{DoxyCompactList}\small\item\em Проверить срок визы \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Декоратор пасспорта 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classCPassportDecorator_a116ab0fa075e02edb74339e2e1cd3389}\label{classCPassportDecorator_a116ab0fa075e02edb74339e2e1cd3389}} 
+\index{C\+Passport\+Decorator@{C\+Passport\+Decorator}!get\+Born\+Date@{get\+Born\+Date}}
+\index{get\+Born\+Date@{get\+Born\+Date}!C\+Passport\+Decorator@{C\+Passport\+Decorator}}
+\subsubsection{\texorpdfstring{get\+Born\+Date()}{getBornDate()}}
+{\footnotesize\ttfamily string C\+Passport\+Decorator\+::get\+Born\+Date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Дата рождения 
+
+\begin{DoxyReturn}{Returns}
+Вывод даты рождения 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCPassportDecorator_a941e597cc2514d8397030eab58682aa6}\label{classCPassportDecorator_a941e597cc2514d8397030eab58682aa6}} 
+\index{C\+Passport\+Decorator@{C\+Passport\+Decorator}!get\+Born\+Place@{get\+Born\+Place}}
+\index{get\+Born\+Place@{get\+Born\+Place}!C\+Passport\+Decorator@{C\+Passport\+Decorator}}
+\subsubsection{\texorpdfstring{get\+Born\+Place()}{getBornPlace()}}
+{\footnotesize\ttfamily string C\+Passport\+Decorator\+::get\+Born\+Place (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Место рождения 
+
+\begin{DoxyReturn}{Returns}
+Вывод места рождения 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCPassportDecorator_a96c55b65b042d4294d6cba471a936574}\label{classCPassportDecorator_a96c55b65b042d4294d6cba471a936574}} 
+\index{C\+Passport\+Decorator@{C\+Passport\+Decorator}!get\+Passport\+Available\+To\+Date@{get\+Passport\+Available\+To\+Date}}
+\index{get\+Passport\+Available\+To\+Date@{get\+Passport\+Available\+To\+Date}!C\+Passport\+Decorator@{C\+Passport\+Decorator}}
+\subsubsection{\texorpdfstring{get\+Passport\+Available\+To\+Date()}{getPassportAvailableToDate()}}
+{\footnotesize\ttfamily string C\+Passport\+Decorator\+::get\+Passport\+Available\+To\+Date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Проверка истечения срока пасспорта 
+
+\begin{DoxyReturn}{Returns}
+Результаты проверки 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCPassportDecorator_aec16f6c3f9feaa6da4d8cef5ea27c7b8}\label{classCPassportDecorator_aec16f6c3f9feaa6da4d8cef5ea27c7b8}} 
+\index{C\+Passport\+Decorator@{C\+Passport\+Decorator}!info@{info}}
+\index{info@{info}!C\+Passport\+Decorator@{C\+Passport\+Decorator}}
+\subsubsection{\texorpdfstring{info()}{info()}}
+{\footnotesize\ttfamily virtual void C\+Passport\+Decorator\+::info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Паспортные данные гражданина(ФИО, Дата и место рождения, не истек ли срок паспорта)\+: 
+
+\begin{DoxyReturn}{Returns}
+Вывод информации о переводе 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classIUniCard}{I\+Uni\+Card}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classCPassportDecorator_a2497ce4827a91e25a28756a56a8ba245}\label{classCPassportDecorator_a2497ce4827a91e25a28756a56a8ba245}} 
+\index{C\+Passport\+Decorator@{C\+Passport\+Decorator}!check\+For\+Visa@{check\+For\+Visa}}
+\index{check\+For\+Visa@{check\+For\+Visa}!C\+Passport\+Decorator@{C\+Passport\+Decorator}}
+\subsubsection{\texorpdfstring{check\+For\+Visa}{checkForVisa}}
+{\footnotesize\ttfamily bool C\+Passport\+Decorator\+::check\+For\+Visa}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{
+            
+    \}
+\end{DoxyCode}
+
+
+Проверить срок визы 
+
+\begin{DoxyReturn}{Returns}
+Вывод информации 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCPassportDecorator_a972d9fe88105ba06ec5bab01e230b1a8}\label{classCPassportDecorator_a972d9fe88105ba06ec5bab01e230b1a8}} 
+\index{C\+Passport\+Decorator@{C\+Passport\+Decorator}!check\+In\+Base@{check\+In\+Base}}
+\index{check\+In\+Base@{check\+In\+Base}!C\+Passport\+Decorator@{C\+Passport\+Decorator}}
+\subsubsection{\texorpdfstring{check\+In\+Base}{checkInBase}}
+{\footnotesize\ttfamily bool C\+Passport\+Decorator\+::check\+In\+Base}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{
+          
+    \}
+\end{DoxyCode}
+
+
+Проверить на фальшивость 
+
+\begin{DoxyReturn}{Returns}
+Вывод информации 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+Passport\+Decorator.\+h\end{DoxyCompactItemize}
