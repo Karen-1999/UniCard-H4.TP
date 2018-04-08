@@ -39,6 +39,13 @@ public:
     string getPassportAvailableToDate() const
     { return passportAvailableToDate; }
 
+    bool checkInBase{
+          //проверка в базе наличия гражданина
+    };
+
+    bool checkForVisa{
+            //проверка срока действия Шенген визы,к примеру.
+    };
 private:
     shared_ptr<CUniCard> unicard;
     string bornDate;

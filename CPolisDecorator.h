@@ -52,6 +52,13 @@ public:
             cout<<ilnesses[i]<<endl;
     }
 
+    bool checkInBase{
+            //проверить прикреплен ли человек к поликлинике
+    };
+
+    bool checkForBenefits{
+            //проверить наличие льготных прав в базе.
+    };
 private:
     shared_ptr<CUniCard> unicard;
     string bornDate;

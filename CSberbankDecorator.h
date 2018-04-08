@@ -73,6 +73,14 @@ public:
             setMoney(getMoney()+value);
     }
 
+    void checkHipotecs() {
+            //проверить и вывести список ипотек
+    };
+
+    void checkDeposit() {
+        //проверить наличие депозитов и вложений
+    }
+
 private:
     shared_ptr<CUniCard> unicard;
     int money;
