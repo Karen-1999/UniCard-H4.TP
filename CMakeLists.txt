@@ -1,15 +1,11 @@
 cmake_minimum_required(VERSION 3.0)
 project(HomeTask4)
-
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_FLAGS -pthread)
-
 set(SOURCE_LIST main.cpp IUniCard.h CUniCard.h IUniCardReader.h CPassportReader.h CPassportDecorator.h CPolisDecorator.h CPolisReader.h CSberbankDecorator.h CSberbankReader.h test.h)
-
 if(WITH_TEST)
     add_definitions(-DWITH_TEST)
 endif()
-
 if(DEBUG)
     set(CMAKE_BUILD_TYPE Debug)
 else()
@@ -17,5 +13,23 @@ else()
 endif()
 find_package(GTest REQUIRED)
 add_executable(HomeTask4 ${SOURCE_LIST})
+find_package(Doxygen)
+option(BUILD_DOC "Build documentation" ON)
+if (CMAKE_BUILD_TYPE MATCHES "^[Rr]elease")
+find_package(Doxygen)
+if (DOXYGEN_FOUND)
+    set(DOXYGEN_IN ${CMAKE_CURRENT_SOURCE_DIR}/Configuration.in)
+    set(DOXYGEN_OUT ${CMAKE_CURRENT_BINARY_DIR}/Сonfiguration)    # request to configure the file
+    configure_file(${DOXYGEN_IN} ${DOXYGEN_OUT} @ONLY)
+    message("Doxygen build started")
+    add_custom_target( doc_doxygen ALL
+            COMMAND ${DOXYGEN_EXECUTABLE} ${DOXYGEN_OUT}
+            WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
+            COMMENT "Generating API documentation with Doxygen"
+            VERBATIM )
+else (DOXYGEN_FOUND)
+    message("Doxygen need to be installed to generate the doxygen documentation")
+endif (DOXYGEN_FOUND)
+endif()
 
 target_link_libraries(HomeTask4 gtest gtest_main)
