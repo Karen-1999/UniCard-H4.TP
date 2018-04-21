@@ -110,7 +110,7 @@ public:
     }
 
 private:
-    shared_ptr<CUniCard> unicard;
+    CUniCard* unicard;
     int money;
     bool available;
 };
