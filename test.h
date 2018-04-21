@@ -23,7 +23,8 @@ TEST(CPassportTest, checkingPassport){
     CPassportDecorator Passport(unicard, "18.10.1992", "Borodino", "20191012");
     CPassportReader reading(&Passport);
     reading.reader();
-    ASSERT_TRUE(Passport.getPassportAvailableToDate() > curtime);
+    EXPECT_EQ(Passport.getPassportAvailableToDate() > curtime, True);
+    delete unicard;
 }
 
 TEST(CSberbankCardTest, sendMoneyTest){
@@ -36,6 +37,7 @@ TEST(CSberbankCardTest, sendMoneyTest){
     CSberbankReader reading(&Sbercard);
     reading.sendMoney(5000);
     EXPECT_EQ(Sbercard.getMoney(), 20432);
+    delete unicard;
 }
 
 TEST(CPolisDecorator, infoPatient){
@@ -46,6 +48,7 @@ TEST(CPolisDecorator, infoPatient){
 
     EXPECT_EQ(unicard->getClientName(),"Petrov P.P.");
     EXPECT_EQ(unicard->getClientID(),"10235213");
+    delete unicard;
 }
 
 #endif //HOMETASK4_TEST_H
