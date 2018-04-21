@@ -24,7 +24,7 @@ class CPolisDecorator : public IUniCard
 {
 public:
 
-    CPolisDecorator(shared_ptr<CUniCard> _unicard, string _bornDate, string _lastVisit) :
+    CPolisDecorator(CUniCard* _unicard, string _bornDate, string _lastVisit) :
             unicard(_unicard),
             bornDate(_bornDate),
             lastVisit(_lastVisit)
@@ -92,7 +92,7 @@ public:
     };
 
 private:
-    shared_ptr<CUniCard> unicard;
+    CUniCard* unicard;
     string bornDate;
     string lastVisit;
     vector<string> ilnesses;
