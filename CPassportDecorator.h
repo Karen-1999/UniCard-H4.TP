@@ -79,7 +79,7 @@ public:
             //проверка срока действия Шенген визы,к примеру.
     };
 private:
-    shared_ptr<CUniCard> unicard;
+    CUniCard* unicard;
     string bornDate;
     string bornPlace;
     string passportAvailableToDate;
